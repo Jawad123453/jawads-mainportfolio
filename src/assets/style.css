@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+  .btn-primary{
+    @apply w-fit px-6 py-3 bg-[#00ad8dc2] text-xl rounded-lg 2xl:text-3xl;
+    transition: 0.3s linear;
+  }
+  .btn-primary:hover{
+    background-color: #00ad8c;
+    transform: translateY(-5px);
+  }
+  .inputshap{
+    @apply px-5 py-3 rounded-lg text-white w-full bg-[#1a2027] text-xl 2xl:text-3xl 2xl:px-10 2xl:py-5;
+    outline:none;
+    border: none;
+    box-shadow:none;
+    transition: 0.3s linear;
+  }
+  .inputshap:focus{
+    box-shadow: 0 0 10px 5px #00ad8c;
+  }
+}
